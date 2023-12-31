@@ -1,0 +1,46 @@
+/* styles.css */
+
+@keyframes fadeInWithDelay {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  color: bisque;
+  opacity: 0; /* Initially hidden */
+  transition: transform 0.5s ease-in-out;
+}
+
+h2.show {
+  opacity: 1; /* Make it visible after the transition is done */
+}
+
+h2:nth-child(1) {
+  animation: fadeInWithDelay 2s ease-out 4s forwards; /* forwards keeps the final state of the animation */
+}
+
+h2:nth-child(2) {
+  animation: fadeInWithDelay 2s ease-out 8s forwards;
+}
+
+h2:nth-child(3) {
+  animation: fadeInWithDelay 2s ease-out 12s forwards;
+}
+
+h2:nth-child(4) {
+  animation: fadeInWithDelay 2s ease-out 16s forwards;
+}
+
+h2:nth-child(5) {
+  animation: fadeInWithDelay 2s ease-out 20s forwards;
+}
+
+h2:nth-child(6) {
+  animation: fadeInWithDelay 2s ease-out 24s forwards;
+}
